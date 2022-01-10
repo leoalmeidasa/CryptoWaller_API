@@ -1,0 +1,39 @@
+en:
+  hello: Hello World
+  new_coin: New Coin
+  edit_coin: Editing Coin
+  new_mining_type: New Mining Type
+  edit_mining_type: Editing Mining Type
+  coin_title: Register Coins
+  type_mining_title: Mining Types
+  welcome: Welcome
+  links:
+    back: Back
+    edit: Edit
+    show: Show
+    destroy: Destroy
+    new: New Coin
+  activerecord:
+    models:
+      coin: 
+        one: Coin
+        other: Coins
+      mining_type: 
+        one: Mining Type
+        other: MIning Types
+    attributes:
+      coin:
+        id: ID
+        description: Name
+        acronym: Acronym
+        url_image: Logo
+        mining_type: Mining Type
+        mining_type_id: Mining Type ID
+        updated_at: Updated at
+        created_at: Created at
+      miningtype:
+        id: ID
+        description: Name
+        acronym: Acronym
+        updated_at: Updated at
+        created_at: Created at

@@ -1,0 +1,40 @@
+pt-BR:
+  hello: Ola Mundo
+  new_coin: Nova Moeda
+  edit_coin: Editando Moeda
+  new_mining_type: Novo Tipos de Mineração
+  edit_mining_type: Editando Tipos de Mineração
+  coin_title: Cadastro de Moedas
+  type_mining_title: Tipos de Mineração
+  welcome: Seja Bem Vindo
+  links:
+    back: Voltar
+    edit: Editar
+    show: Mostrar
+    destroy: Deletar
+    new: Nova Moeda
+    new_type: Novo Tipos de Mineração
+  activerecord:
+    models:
+      coin: 
+        one: Moeda
+        other: Moedas
+      mining_type: 
+        one: Tipos de Mineração
+        other: Tipos de Mineração
+    attributes:
+      coin:
+        id: Código
+        description: Nome
+        acronym: Sigla
+        url_image: Logo
+        mining_type: Tipo de mineração
+        mining_type_id: ID Tipo de mineração
+        updated_at: Atualizado em
+        created_at: Criado em
+      mining_type:
+        id: Código
+        description: Nome
+        acronym: Sigla
+        updated_at: Atualizado em
+        created_at: Criado em
