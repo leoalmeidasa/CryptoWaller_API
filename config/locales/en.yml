@@ -7,6 +7,9 @@ en:
   coin_title: Register Coins
   type_mining_title: Mining Types
   welcome: Welcome
+  language: Select a language
+  confirm: Are you sure ?
+  selection: Select...
   links:
     back: Back
     edit: Edit

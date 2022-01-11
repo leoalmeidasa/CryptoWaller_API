@@ -29,8 +29,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'pry-rails', '~> 0.3.9'
-gem 'tty-spinner', '~> 0.9.3'
 gem 'rails-i18n', '~> 6.0'
+gem 'simple_form', '~> 5.1'
+gem 'tty-spinner', '~> 0.9.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

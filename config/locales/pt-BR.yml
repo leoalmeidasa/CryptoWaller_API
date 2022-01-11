@@ -6,7 +6,10 @@ pt-BR:
   edit_mining_type: Editando Tipos de Mineração
   coin_title: Cadastro de Moedas
   type_mining_title: Tipos de Mineração
+  language: Selecione o idioma
   welcome: Seja Bem Vindo
+  confirm: Tem certeza ?
+  selection: Selecione...
   links:
     back: Voltar
     edit: Editar

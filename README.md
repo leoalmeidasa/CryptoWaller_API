@@ -1,24 +1,32 @@
-# README
+# Projeto do Curso Ruby on Rails 5.x - Do início ao fim!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requisitos
+● Cadastro de Moedas 
 
-Things you may want to cover:
+● Cadastro dos Tipos de Mineração
 
-* Ruby version
+## Dependências
 
-* System dependencies
+- Ruby 3.0.3
+- Rails 6.1.4.4
+- Sqlite3
 
-* Configuration
+## API no Heroku
+● link:
 
-* Database creation
+## Documentação da API
+● link: 
 
-* Database initialization
+## Setup
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. `git clone https://github.com/leoalmeidasa/CryptoWallet.git`
+2. `cd CryptoWallet`
+3. `rails db:create db:migrate`
+<<<<<<< HEAD
+4. `rails s`
+5. Abrir o link `localhost:3000`
+=======
+4. `yarn install`
+5. `rails s`
+6. Abrir o link `localhost:3000`
+>>>>>>> c838b34d3b25a9f24a0e96bb66c57598578a5e8f

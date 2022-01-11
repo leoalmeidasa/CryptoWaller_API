@@ -1,4 +1,4 @@
-<%= form_with(model: mining_type) do |form| %>
+<%= simple_form_for @mining_type do |form| %>
   <% if mining_type.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(mining_type.errors.count, "error") %> prohibited this mining_type from being saved:</h2>
@@ -11,17 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+  <div class="form-group row">
+    <%= form.label :description, class: "col-sm-2 col-form-label"  %>
+    <div class="col-sm-10">
+      <%= form.input_field :description, placeholder:"Power of Work" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :acronym %>
-    <%= form.text_field :acronym %>
+  <div class="form-group row">
+    <%= form.label :acronym, class: "col-sm-2 col-form-label"  %>
+    <div class="col-sm-10">
+      <%= form.input_field :acronym, placeholder:"PoW" %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group-row">
+    <%= form.submit class:"btn btn-primary" %>
   </div>
+  <br>
 <% end %>

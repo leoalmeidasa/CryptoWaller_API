@@ -1,10 +1,9 @@
-<h1><%= t('welcome')%></h1>
-<ul>
-    <li><%= link_to 'English', root_path(locale: 'en') %></li>
-    <li><%= link_to 'Português', root_path(locale: 'pt-BR') %></li>
-</ul>     
-
-<%= render "menu" %>
-
-
-
+<div class="jumbotron">
+  <h1 class="display-4"><%= t('welcome')%></h1>
+  <p class="lead"><%= t('language')%></p>
+  <hr class="my-4">
+  <p class="lead">
+  <%= link_to 'English', root_path(locale: 'en'), class: "btn btn-outline-info" %>
+  <%= link_to 'Português', root_path(locale: 'pt-BR'), class: "btn btn-outline-success" %>
+  </p>
+</div>

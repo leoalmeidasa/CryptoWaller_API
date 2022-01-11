@@ -1,4 +1,4 @@
-<%= form_with(model: coin) do |form| %>
+<%= simple_form_for @coin do |form| %>
   <% if coin.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(coin.errors.count, "error") %> prohibited this coin from being saved:</h2>
@@ -11,27 +11,40 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+  <form>
+  <div class="form-group row">
+    <%= form.label :description, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.input_field :description, placeholder:"Bitcoin" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :acronym %>
-    <%= form.text_field :acronym %>
+  <div class="form-group row">
+    <%= form.label :acronym, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.input_field :acronym, placeholder:"BTC"%>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :url_image %>
-    <%= form.text_field :url_image %>
+  <div class="form-group row">
+    <%= form.label :url_image, class: "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.input_field :url_image, placeholder:"https://img.ur/bitcoin.png"%>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :mining_type %>
-    <%= form.select("mining_type_id", @mining_type_options, { include_blank: 'Selecione...' }) %>
+  <div class="form-group row">
+      <%= form.label :mining_type, class: 'col-sm-2 col-form-label' %>
+    <div class="col-sm-3">
+      <%= form.select("mining_type_id", @mining_type_options, { include_blank: t('selection') }, class:"form-control") %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <%= form.submit class: 'btn btn-primary' %>
+    </div>
   </div>
+  </form>
+  <br>
 <% end %>
