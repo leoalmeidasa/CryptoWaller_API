@@ -22,10 +22,6 @@
 1. `git clone https://github.com/leoalmeidasa/CryptoWallet.git`
 2. `cd CryptoWallet`
 3. `rails db:create db:migrate`
-<<<<<<< HEAD
-4. `rails s`
-5. Abrir o link `localhost:3000`
-=======
 4. `yarn install`
 5. `rails s`
 6. Abrir o link `localhost:3000`
