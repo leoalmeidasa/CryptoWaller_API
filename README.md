@@ -29,4 +29,3 @@
 4. `yarn install`
 5. `rails s`
 6. Abrir o link `localhost:3000`
->>>>>>> c838b34d3b25a9f24a0e96bb66c57598578a5e8f
