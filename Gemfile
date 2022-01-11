@@ -5,6 +5,11 @@ ruby '3.0.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
+<<<<<<< HEAD
+# Use sqlite3 as the database for Active Record
+
+=======
+>>>>>>> b03811a2ef7ecc410dd238767c3755fd0432a0ff
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -34,8 +39,12 @@ gem 'tty-spinner', '~> 0.9.3'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+<<<<<<< HEAD
+  gem 'sqlite3', '~> 1.4'
+=======
   # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
+>>>>>>> b03811a2ef7ecc410dd238767c3755fd0432a0ff
 end
 
 group :development do
@@ -58,9 +67,15 @@ group :test do
   gem 'webdrivers'
 end
 
+<<<<<<< HEAD
+group :production do 
+ gem 'pg'
+end
+=======
 grouṕ :production do
   gem 'pg'
 end
 
+>>>>>>> b03811a2ef7ecc410dd238767c3755fd0432a0ff
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
