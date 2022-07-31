@@ -12,7 +12,7 @@
 - Sqlite3
 
 ## API no Heroku
-● link:https://cryptowallet2022.herokuapp.com/
+● link:https://cryptowallet2022.herokuapp.com/ retirado na data de 31/08/2022
 
 ## Documentação da API
 ● link: 
